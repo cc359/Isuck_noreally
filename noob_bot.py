@@ -14,6 +14,10 @@ general_channel = 134475106515681281 ###should be == to server_id if default!
 notification_channel = 140236349763485706
 gamingpictures_channel =135156847454715904
 
+###Assets###
+URL_Sean= ""
+URL_Gio= ""
+URL_Lou= ""
 ######Commands and Responses, WIP####
 ggl = "https://goo.gl/"
 video_command = ["!HotlineBoom","!Benji","!Xyzzy", "!wow" ]
@@ -21,7 +25,7 @@ response_video = ["Y7ilii", "https://youtu.be/s3FXqil1vL8?t=1s"]
 text_command = ["!SecHelp"]
 response_text = ["For a list of video commands type !SecVideo, for images !SecImage "]
 image_command = ["!Sean", "!Gio", "!Lou" ]
-response_image = ["https://goo.gl/erhVSI", "http://www.diet-blog.com/wp-content/uploads/SubwaySandwichBIG.jpg", "http://www.costumemaze.com/images/images_big/70217-SUPER-JUMBO-AFRO.jpg" ]
+response_image = [URL_Sean, URL_Gio, URL_Lou ] #Add in URL variables as required at a later date
 
 ######Youtube player variables and definitions##
 ##voice = yield from client.join_voice_channel(channel)
