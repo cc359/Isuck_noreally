@@ -20,8 +20,8 @@ URL_Gio= ""
 URL_Lou= ""
 ######Commands and Responses, WIP####
 ggl = "https://goo.gl/"
-video_command = ["!HotlineBoom","!Benji","!Xyzzy", "!wow" ]
-response_video = ["Y7ilii", "https://youtu.be/s3FXqil1vL8?t=1s"]
+video_command = ["!Boom","!Benji","!Xyzzy", "!wow" ]
+response_video = ["", ""]
 text_command = ["!SecHelp"]
 response_text = ["For a list of video commands type !SecVideo, for images !SecImage "]
 image_command = ["!Sean", "!Gio", "!Lou" ]
@@ -39,10 +39,10 @@ def on_member_join(member):
 
 @client.event
 def on_message(msg):
-    if msg.content.startswith("!HotlineBoom"):
-        client.send_message(msg.channel, ggl+"Y7ilii")
+    if msg.content.startswith("!Boom"):
+        client.send_message(msg.channel, ggl+"")
     if msg.content.startswith("!Benji"):
-        client.send_message(msg.channel, "https://youtu.be/s3FXqil1vL8?t=1s")
+        client.send_message(msg.channel, "")
 
         #Auto play WIP
     #if msg.content.startswith("!Test"):
@@ -52,15 +52,15 @@ def on_message(msg):
     if msg.content.startswith(text_command[0]):
         client.send_message(msg.author, response_text[0] )
     if msg.content.startswith("!Sean"):
-        client.send_message(msg.channel, ggl+"erhVSI")
+        client.send_message(msg.channel, ggl+"")
     if msg.content.startswith("!Gio"):
-        client.send_message(msg.channel, "http://www.diet-blog.com/wp-content/uploads/SubwaySandwichBIG.jpg")
+        client.send_message(msg.channel, "")
     if msg.content.startswith("!Lou"):
-        client.send_message(msg.channel, ggl+"YZklt")
+        client.send_message(msg.channel, ggl+"")
     if msg.content.startswith("!Xyzzy"):
-        client.send_message(msg.channel, ggl+"NHk10r")
+        client.send_message(msg.channel, ggl+"")
     if msg.content.startswith("!wow"):
-        client.send_message(msg.channel, ggl+"TsGqG8")
+        client.send_message(msg.channel, ggl+"")
 
 #Status variables#
 
